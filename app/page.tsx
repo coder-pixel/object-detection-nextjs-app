@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Camera Feed / Standby Boundary */}
-        <div className="relative aspect-[4/3] w-full bg-slate-950 sm:aspect-video">
+        <div className="relative aspect-4/3 w-full bg-slate-950 sm:aspect-video">
           {showObjectDetection ? (
             <ObjectDetection />
           ) : (
@@ -91,7 +91,7 @@ export default function Home() {
               <p className="text-xs font-medium text-slate-300 sm:text-sm">
                 Camera feed is paused
               </p>
-              <p className="mt-1 max-w-[240px] text-[11px] leading-relaxed text-slate-500 sm:max-w-xs sm:text-xs">
+              <p className="mt-1 max-w-60 text-[11px] leading-relaxed text-slate-500 sm:max-w-xs sm:text-xs">
                 Tap{" "}
                 <span className="font-medium text-slate-300">
                   Start Detection
